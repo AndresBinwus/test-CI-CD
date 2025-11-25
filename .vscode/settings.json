@@ -1,3 +1,22 @@
 {
-	"cSpell.words": ["transfering"]
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#599d27",
+        "activityBar.background": "#599d27",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#b2cbec",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#599d27",
+        "statusBar.background": "#42741d",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#599d27",
+        "statusBarItem.remoteBackground": "#42741d",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#42741d",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#42741d99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#42741d"
 }
