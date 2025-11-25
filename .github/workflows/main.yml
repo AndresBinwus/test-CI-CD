@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  CI/CD-testing:
+  test_CI_CD:
     runs-on: ubuntu-latest
 
     steps:
