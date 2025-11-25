@@ -1,15 +1,22 @@
-name: test-CI/CD
+name: Manual Required Check
 
 on:
-  pull_request:
-    branches:
-      - "*"
   workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for running this manual check'
+        required: true
+        default: 'Manual trigger'
 
 jobs:
-  test:
+  manual_check:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Always succeed
-        run: echo "Workflow completed successfully"
+      - name: Perform Manual Check
+        run: |
+          echo "Running manual checks..."
+          # Add your manual check logic here
+          # For example, a script that performs a specific verification
+          # If the check fails, exit with a non-zero code to indicate failure
+          # exit 1 
+          echo "Manual check completed successfully."
