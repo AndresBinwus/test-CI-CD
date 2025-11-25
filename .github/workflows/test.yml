@@ -1,12 +1,18 @@
 name: CI - Unit Tests
 
 on:
-  pull_request:
-    branches:
-      - "*"
+  workflow_dispatch:
+  issue_comment:
+    types: [created]
 
 jobs:
   test:
+    # Solo ejecuta cuando:
+    # - el comentario es en un PR (no en un issue normal)
+    # - el comentario contiene exactamente /test-run (ajústalo si quieres)
+    if: >
+      github.event.issue.pull_request != '' &&
+      github.event.comment.body == '/test-run'
     runs-on: ubuntu-latest
 
     steps:
@@ -24,5 +30,3 @@ jobs:
 
       - name: Run unit tests
         run: npm run testing
-
-
