@@ -12,11 +12,17 @@ jobs:
   manual_check:
     runs-on: ubuntu-latest
     steps:
-      - name: Perform Manual Check
-        run: |
-          echo "Running manual checks..."
-          # Add your manual check logic here
-          # For example, a script that performs a specific verification
-          # If the check fails, exit with a non-zero code to indicate failure
-          # exit 1 
-          echo "Manual check completed successfully."
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run unit tests
+        run: npm run testing
