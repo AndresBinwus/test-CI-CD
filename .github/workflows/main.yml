@@ -1,15 +1,12 @@
 name: test-CI/CD
 
 on:
-  pull_request:
-    branches:
-      - "*"
   workflow_dispatch:
 
 jobs:
-  test:
+  test_CI_CD:
     runs-on: ubuntu-latest
 
     steps:
       - name: Always succeed
-        run: echo "Workflow completed successfully"
+        run: echo "Workflow completed successfullyasdasd"
