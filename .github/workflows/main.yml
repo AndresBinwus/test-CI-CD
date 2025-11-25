@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: Always succeed
-        run: echo "Workflow completed successfully"
+        run: echo "Workflow completed successfullyasdasd"
