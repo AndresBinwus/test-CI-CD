@@ -15,7 +15,7 @@ on:
     branches:
       - '**'
     types:
-      - opened
+      - opened  
 
 jobs:
   manual_check:
