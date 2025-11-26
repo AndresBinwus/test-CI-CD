@@ -11,6 +11,11 @@ on:
         description: 'Reason for running this manual check'
         required: true
         default: 'Manual trigger'
+  pull_request:
+    branches:
+      '**'
+    types:
+      - opened
 
 jobs:
   manual_check:
