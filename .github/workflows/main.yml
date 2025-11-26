@@ -14,8 +14,7 @@ on:
   pull_request:
     branches:
       - '**'
-    types:
-      - opened  
+    types:  
       - reopened
 
 jobs:
