@@ -13,9 +13,9 @@ on:
         default: 'Manual trigger'
   pull_request:
     branches:
-      '**'
+      - '**'
     types:
-      - opened
+      - opened  
 
 jobs:
   manual_check:
