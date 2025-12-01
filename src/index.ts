@@ -4,7 +4,7 @@ import cors from "@fastify/cors";
 import { waterBodySchema } from "./schemas/water.schema";
 import ajvErrors from "ajv-errors";
 
-/////////
+
 
 const server = fastify({
   logger: true,
