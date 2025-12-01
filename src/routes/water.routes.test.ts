@@ -21,7 +21,7 @@ describe("Water Module Endpoints", () => {
   test("POST /api/v1/water/solve - should return 400 for invalid input", async () => {
     try {
       await axios.post(`${address}/api/v1/water/solve`, {
-        x_capacity: -5,
+        x_capacity: -6,
         y_capacity: 3,
         z_amount_wanted: 4,
       });
