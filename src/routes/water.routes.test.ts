@@ -9,7 +9,7 @@ beforeAll(async () => {
   const addr = server.server.address() as any;
   const port =
     typeof addr === "string"
-      ? parseInt(addr.split(":").pop() as string, 10)
+      ? Number.parseInt(addr.split(":").pop() as string, 10)
       : addr.port;
   address = `http://127.0.0.1:${port}`;
 });
